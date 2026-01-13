@@ -1,0 +1,18 @@
+query questionData($titleSlug: String!) {
+  question(titleSlug: $titleSlug) {
+    questionId
+    title
+    titleSlug
+    content
+    isPaidOnly
+
+    exampleTestcases
+    sampleTestCase
+
+    codeSnippets {
+      lang
+      langSlug
+      code
+    }
+  }
+}
